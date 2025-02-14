@@ -23,25 +23,25 @@ somma = aritmeticSum(userNumbeer, randomNumber)
 console.log(somma);
 let result
 
-function itsOdd(num) {
+function itsOdd(num, str) {
     if (num % 2 === 0)
-        result = "pari"
+        str = "pari"
     else {
-        result = "dispari"
+        str = "dispari"
     }
-    return result
+    return str
 }
-itsOdd(somma)
+itsOdd(somma, result)
 console.log(result);
 
-function areYouWinner(str) {
-    if (str === result) {
+function areYouWinner(str, str2) {
+    if (str === str2) {
         alert("hai vinto!")
     } else {
         alert("hai perso")
     }
 }
-areYouWinner(userChoice)
+areYouWinner(userChoice, result)
 
 
 //ESERCIZIO SENZA L'USO DELLE FUNZIONI
