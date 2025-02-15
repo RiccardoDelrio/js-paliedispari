@@ -1,7 +1,4 @@
-/* 
-Scrivi una funzione rimuoviDuplicati(arr) che accetti un array e restituisca un nuovo array con tutti i duplicati rimossi.
-Scrivi una funzione ruotaSinistra(arr, k) che accetti un array e un numero k e ruoti gli elementi dell'array a sinistra di k posizioni
-Scrivi una funzione parolaPiuLunga(frase) che accetti una stringa contenente più parole e restituisca la parola più lunga. */
+
 
 
 //Scrivi una funzione rimuoviDuplicati(arr) che accetti un array e restituisca un nuovo array con tutti i duplicati rimossi.
@@ -19,7 +16,6 @@ console.log(Array.from(duplicati))
 
 
 //Scrivi una funzione ruotaSinistra(arr, k) che accetti un array e un numero k e ruoti gli elementi dell'array a sinistra di k posizioni
-
 //slice e concat ?
 const numeri = [5, 4, 3, 2, 6, 9, 62];
 console.log(numeri.length)
@@ -35,3 +31,18 @@ function ruotaSinistra(arr, k) {
     }
 }
 console.log(ruotaSinistra(numeri, k));
+//Scrivi una funzione parolaPiuLunga(frase) che accetti una stringa contenente più parole e restituisca la parola più lunga. */
+const fraseDelGiorno = "ciao guarda che bella giornata di sole"
+const ilMioArray = []
+let longest = ""
+function findLongst(str, arr, word) {
+    arr = str.split(" ")
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > word.length) {
+            word = arr[i]
+        }
+    }
+    return word
+}
+console.log(findLongst(fraseDelGiorno, ilMioArray, longest));
+
